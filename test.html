@@ -3,59 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Website</title>
+    <title>Your Name - Personal Webpage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
         }
-        header {
-            background-color: #333;
-            color: #FFD700; /* Changed to a gold color */
-            padding: 1em 0;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            margin-top: 20px;
             background-color: white;
-            padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
         }
-        h2, h3 {
-            color: #333;
-        }
-        h1 {
-            color: #FFD700;
-        }
-        p {
-            line-height: 1.6;
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Sample Website</h1>
+
+<div class="container">
+    <header class="text-center">
+        <img src="your-photo.jpg" alt="Your Name" class="img-fluid">
+        <h1 class="mt-3">Your Name</h1>
+        <p>Your professional tagline or a brief introduction</p>
     </header>
-    <main>
-        <div class="container">
-            <h2>About This Site</h2>
-            <p>This is a sample website created to demonstrate a basic HTML structure. It includes a header, a main content area, and some styled elements.</p>
-            
-            <h2>Sample Text</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada lorem ac arcu suscipit, non aliquam ligula tempor. Nulla facilisi. Curabitur vitae libero nunc. Integer luctus arcu sit amet augue scelerisque, in dictum magna viverra. Vivamus bibendum elit nec sapien venenatis, vel scelerisque nulla commodo.</p>
-            
-            <h3>Another Section</h3>
-            <p>Etiam ut ante quis urna laoreet fermentum. Mauris efficitur venenatis ligula, et ultricies nulla scelerisque at. Integer ut mi sit amet risus elementum luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            
-            <h3>Yet Another Section</h3>
-            <p>Suspendisse potenti. Nam ac nisi ex. Fusce sit amet nisl vel nunc dictum scelerisque. Phasellus convallis libero non lectus volutpat, non venenatis libero pulvinar. Donec maximus, nisi nec vehicula elementum, nulla dui semper arcu, nec scelerisque turpis nulla vel ligula.</p>
+    
+    <section class="mt-4">
+        <h2>About Me</h2>
+        <p>A brief description about yourself, your interests, and your professional background.</p>
+    </section>
+    
+    <section class="mt-4">
+        <h2>Skills</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Skill 1</li>
+            <li class="list-group-item">Skill 2</li>
+            <li class="list-group-item">Skill 3</li>
+            <li class="list-group-item">Skill 4</li>
+        </ul>
+    </section>
+    
+    <section class="mt-4">
+        <h2>GitHub</h2>
+        <div class="text-center mt-3">
+            <a href="https://github.com/yourusername" target="_blank" class="btn btn-dark">Visit my GitHub Profile</a>
         </div>
-    </main>
+    </section>
+    
+    <section class="mt-4">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
+    </section>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
