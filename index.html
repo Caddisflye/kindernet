@@ -3,61 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Website</title>
+    <title>Welcome to Jirginx!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
         }
-        header {
-            background-color: #333;
-            color: #FFD700; /* Changed to a gold color */
-            padding: 1em 0;
+
+        .container {
             text-align: center;
         }
-        main {
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #FFD700;
 
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background-image: linear-gradient(45deg, #f06, #fc0, #3c9, #09f, #f06, #fc0, #3c9, #09f);
+            background-size: 600%;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: rainbow 8s linear infinite;
         }
-        h2, h3 {
-            color: #333;
+
+        @keyframes rainbow {
+            0% { background-position: 0 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0 50%; }
         }
+
         p {
-            line-height: 1.6;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .image-container {
+            margin-top: 30px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .links {
+                margin-top: 20px;
+        }
+
+        .links a {
+                display: block;
+                margin-bottom: 10px;
+                text-decoration: none;
+                color: #333;
+                font-size: 1.2em;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Sample Website</h1>
-    </header>
-    <main>
-        <div class="container">
-            <h2>About This Site</h2>
-            <p>This is a sample website created to demonstrate a basic HTML structure. It includes a header, a main content area, and some styled elements.</p>
-            
-            <h2>Sample Text</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada lorem ac arcu suscipit, non aliquam ligula tempor. Nulla facilisi. Curabitur vitae libero nunc. Integer luctus arcu sit amet augue scelerisque, in dictum magna viverra. Vivamus bibendum elit nec sapien venenatis, vel scelerisque nulla commodo.</p>
-            
-            <h3>Another Section</h3>
-            <p>Etiam ut ante quis urna laoreet fermentum. Mauris efficitur venenatis ligula, et ultricies nulla scelerisque at. Integer ut mi sit amet risus elementum luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            
-            <h3>Yet Another Section</h3>
-            <p>Suspendisse potenti. Nam ac nisi ex. Fusce sit amet nisl vel nunc dictum scelerisque. Phasellus convallis libero non lectus volutpat, non venenatis libero pulvinar. Donec maximus, nisi nec vehicula elementum, nulla dui semper arcu, nec scelerisque turpis nulla vel ligula.</p>
+    <div class="container">
+        <h1>Welcome to JirginX</h1>
+        <p>part of the KINDERNET universe</p>
+        <div class="links">
+                <a href="http://milan.kinder.ko1.os.scif.cz" target="_blank">MILGINX</a>
+                <a href="http://vladimir.kinder.ko1.os.scif.cz" target="_blank">VLADGINX</a>
         </div>
-    </main>
+        <div class="image-container">
+            <img src="disco.gif" alt="DISCO">
+        </div>
+    </div>
 </body>
 </html>
-
